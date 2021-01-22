@@ -1,12 +1,24 @@
 // Import stylesheets
 import "./css/style.css";
 
+function getCookie(name) {
+  var pattern = RegExp(name + "=.[^;]*");
+  var matched = document.cookie.match(pattern);
+  if (matched) {
+    var cookie = matched[0].split("=");
+    return cookie[1];
+  }
+  return false;
+}
+
 var s,
   count = 0,
-  best = 0,
+  best = getCookie("best"),
   def = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, ""],
   sum = 0;
-
+if (best != false || best != "") {
+  document.getElementById("best").innerHTML = "Best<br>" + best;
+}
 function shuffle(array) {
   let m = array.length,
     t,
@@ -65,12 +77,14 @@ function board(str) {
 }
 
 function win() {
-  if (best == 0) {
+  if (best == false) {
     best = count;
+    document.cookie = `best=${best}; max-age=2592000; secure`;
   } else if (count < best) {
     best = count;
+    document.cookie = `best=${best}; max-age=2592000; secure`;
   }
-  if (best != 0) {
+  if (best != false) {
     document.getElementById("best").innerHTML = "Best<br>" + best;
   }
   document.getElementById("winsign").style.visibility = "visible";
