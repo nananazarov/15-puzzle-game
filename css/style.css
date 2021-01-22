@@ -12,7 +12,7 @@ p {
 }
 
 .winsign {
-  visibility: visible;
+  visibility: hidden;
   width: 42vh;
   height: 42vh;
   border: 0.6vh;
