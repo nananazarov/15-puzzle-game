@@ -1,0 +1,224 @@
+body {
+  background: rgb(22, 23, 28);
+}
+
+p {
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 5vh;
+  color: #d53c67;
+  font-weight: lighter;
+}
+
+.winsign {
+  visibility: hidden;
+  width: 42vh;
+  height: 42vh;
+  border: 0.6vh;
+  border-style: solid;
+  border-color: #d53369;
+  border-radius: 2.5vh;
+  background: rgb(22, 23, 28);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.winsign p {
+  font-weight: normal;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 6vh;
+  margin: 0;
+  color: #d53369;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 45vh;
+  grid-template-rows: 10vh 45vh 10vh;
+  row-gap: 2vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.item {
+  align-self: center;
+  justify-self: center;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(2, 20vh);
+  grid-template-rows: 10vh;
+  column-gap: 5;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(4, 10vh);
+  grid-template-rows: repeat(4, 10vh);
+  column-gap: 1vh;
+  row-gap: 1vh;
+  line-height: 9vh;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 5vh;
+}
+
+.game .cell {
+  border: 0.6vh;
+  border-radius: 2.5vh;
+  border-style: solid;
+}
+
+.game .cell:hover {
+  font-size: 6vh;
+}
+
+#c1 {
+  cursor: pointer;
+  border-color: #d53369;
+  color: #d53369;
+  /* background:#d53369; */
+}
+
+#c2 {
+  cursor: pointer;
+  border-color: #d53c67;
+  color: #d53c67;
+  /* background:#d53c67; */
+}
+
+#c3 {
+  cursor: pointer;
+  border-color: #d64566;
+  color: #d64566;
+  /* background:#d64566; */
+}
+
+#c4 {
+  cursor: pointer;
+  border-color: #d64d64;
+  color: #d64d64;
+  /* background:#d64d64; */
+}
+
+#c5 {
+  cursor: pointer;
+  border-color: #d65662;
+  color: #d65662;
+  /* background:#d65662; */
+}
+
+#c6 {
+  cursor: pointer;
+  border-color: #d75f60;
+  color: #d75f60;
+  /* background:#d75f60; */
+}
+
+#c7 {
+  cursor: pointer;
+  border-color: #d7685f;
+  color: #d7685f;
+  /* background:#d7685f; */
+}
+
+#c8 {
+  cursor: pointer;
+  border-color: #d8715d;
+  color: #d8715d;
+  /* background:#d8715d; */
+}
+
+#c9 {
+  cursor: pointer;
+  border-color: #d8795b;
+  color: #d8795b;
+  /* background:#d8795b; */
+}
+
+#c10 {
+  cursor: pointer;
+  border-color: #d8825a;
+  color: #d8825a;
+  /* background:#d8825a; */
+}
+
+#c11 {
+  cursor: pointer;
+  border-color: #d98b58;
+  color: #d98b58;
+  /* background:#d98b58; */
+}
+
+#c12 {
+  cursor: pointer;
+  border-color: #d99456;
+  color: #d99456;
+  /* background:#d99456; */
+}
+
+#c13 {
+  cursor: pointer;
+  border-color: #d99c54;
+  color: #d99c54;
+  /* background:#d99c54; */
+}
+
+#c14 {
+  cursor: pointer;
+  border-color: #daa553;
+  color: #daa553;
+  /* background:#daa553; */
+}
+
+#c15 {
+  cursor: pointer;
+  border-color: #daae51;
+  color: #daae51;
+  /* background:#daae51; */
+}
+
+#c {
+  border-color: rgba(0, 0, 0, 0);
+  color: rgba(0, 0, 0, 0);
+}
+
+#newgame {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 5vh;
+  width: 43vh;
+  height: 10vh;
+  border: 0.6vh;
+  background: 0;
+  border-radius: 2.5vh;
+  border-style: solid;
+  cursor: pointer;
+  border-color: #daa553;
+  color: #daa553;
+}
+
+#newgame:hover {
+  font-size: 5.5vh;
+  /* border-color: #d8825a;
+  color: #d8825a; */
+}
+
+button:active {
+  outline: none;
+}
