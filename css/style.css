@@ -12,12 +12,12 @@ p {
 }
 
 .winsign {
-  visibility: hidden;
+  visibility: visible;
   width: 42vh;
   height: 42vh;
   border: 0.6vh;
   border-style: solid;
-  border-color: #d53369;
+  border-color: #d8715d;
   border-radius: 2.5vh;
   background: rgb(22, 23, 28);
   position: absolute;
@@ -33,7 +33,7 @@ p {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 6vh;
   margin: 0;
-  color: #d53369;
+  color: #d8715d;
   position: absolute;
   top: 50%;
   left: 50%;
