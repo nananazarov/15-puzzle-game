@@ -58,7 +58,10 @@ function newGame() {
     }
   }
   if (sum % 2 == 1) {
-    [s[1], s[2]] = [s[2], s[1]];
+    console.log(s);
+    if(s[0]!=16 && s[1]!=16){[s[0], s[1]] = [s[1], s[0]];}
+    else{[s[2], s[3]] = [s[3], s[2]];}
+    console.log(s);
   }
   s[s.indexOf(16, 0)] = "";
   return s;

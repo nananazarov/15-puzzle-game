@@ -1,5 +1,10 @@
 body {
   background: rgb(22, 23, 28);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 p {
@@ -46,11 +51,6 @@ p {
   grid-template-columns: 45vh;
   grid-template-rows: 10vh 45vh 10vh;
   row-gap: 2vh;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
 }
 
 .item {
@@ -82,10 +82,12 @@ p {
   border: 0.6vh;
   border-radius: 2.5vh;
   border-style: solid;
+  transform: scale(1);
+  transition: all 0.1s;
 }
 
 .game .cell:hover {
-  font-size: 6vh;
+  transform: scale(1.1);
 }
 
 #c1 {
@@ -211,12 +213,12 @@ p {
   cursor: pointer;
   border-color: #daa553;
   color: #daa553;
+  transform: scale(1);
+  transition: all 0.1s;
 }
 
 #newgame:hover {
-  font-size: 5.5vh;
-  /* border-color: #d8825a;
-  color: #d8825a; */
+  transform: scale(1.1);
 }
 
 button:active {
